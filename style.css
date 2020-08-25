@@ -1,3 +1,71 @@
+/*set formatting for page */
+
 body {
-font-family: Nova Optima, Garamond, Arial;
+  font-family: Helvetica, Arial;
+  background-color: #4D508C;
+  background-image: url("./images/lights.jpg");
+  margin: auto;
+  text-align: center;
+}
+
+
+header {
+  text-align: center;
+  font-family: Garamond;
+  font-size: 62px;
+}
+
+p , li {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  padding: 0px;
+  text-size: 32px;
+  color: #FFFFFF;
+}
+
+h1, h2, h3 {
+  color: #FFFFFF;
+}
+
+/*link decoration. Needs work*/
+
+a:hover {
+  opacity: 50%;
+}
+
+a:active {
+  color: #731D99;
+}
+
+a:visited {
+  opacity: 75%;
+  color: crimson;
+}
+
+a:link {
+  font-style: cursive;
+  color: #220B2F;
+}
+
+/*Profile pic decoration*/
+
+.profile-pic {
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+}
+
+div.profile-pic > img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  width: 50%;
+  text-align: center;
+}
+
+
+hr {
+  width: 400px;
 }
