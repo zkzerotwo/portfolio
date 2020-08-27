@@ -1,51 +1,66 @@
 /*set formatting for page */
 
 body {
-  font-family: Helvetica, Arial;
   background-color: #4D508C;
-  background-image: url("./images/lights.jpg");
+  background: linear-gradient(45deg, purple, black, blue, black 70%, purple);
   margin: auto;
   text-align: center;
 }
 
-
-header {
-  text-align: center;
-  font-family: Garamond;
-  font-size: 62px;
-}
-
-p , li {
-  width: 65%;
+p  {
+  width: 100%;
   margin: auto;
   text-align: center;
   padding: 0px;
   text-size: 32px;
-  color: #FFFFFF;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 h1, h2, h3 {
   color: #FFFFFF;
+  font-family: Verdana, Geneva, sans-serif
 }
 
-/*link decoration. Needs work*/
-
-a:hover {
-  opacity: 50%;
+main {
+  padding: 20px 0;
 }
 
-a:active {
+section {
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin: 0 0 30px 10px;
+}
+
+h2 {
+  margin: 0 10px;
+}
+
+/*link decoration*/
+a {
+  color: #FF7F17;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+div a:hover {
+  color: red;
+}
+
+ div a:active {
   color: #731D99;
 }
 
-a:visited {
+div a:visited {
   opacity: 75%;
-  color: crimson;
+  color: red;
 }
 
-a:link {
+div a:link {
   font-style: cursive;
-  color: #220B2F;
+  color: blue;
 }
 
 /*Profile pic decoration*/
@@ -61,11 +76,143 @@ div.profile-pic > img {
   display: block;
   margin-left: auto;
   margin-right:auto;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
+/* Flex formatting */
 
-hr {
-  width: 400px;
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-item {
+  justify-content: center;
+  width: 100%;
+}
+
+.item {
+  margin: 10px;
+  flex: 1;
+  min-width: 400px;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.card {
+  background-color: gray;
+  border-radius: 5px;
+  margin: 5px;
+  padding: auto;
+  min-width: 200px;
+  max-width: 400px;
+  min-height: 200px;
+}
+
+.intro-card {
+  border-radius: 50%;
+  background-image: url("./images/abstract-art-blur-blurred-301664.jpg");
+  background-color: gray;
+  background:-size: cover;
+  background-position: center;
+  max-height: 100px;
+  width: 100%;
+}
+
+p.intro-card {
+  color: black;
+}
+/* Responsive flex */
+
+@media all and (min-width: 800px) {
+
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .stack {
+    justify-content: space-evenly;
+  }
+
+  .card {
+    max-height: 600px;
+    min-height: 400px;
+  }
+  div.profile-pic > img {
+    width: 50%;
+  }
+}
+
+
+/* Header Nav Bar */
+
+body {
+  margin: 0;
+}
+
+header {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a{
+  color: #d6d6d6;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Responsive header */
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
 }
