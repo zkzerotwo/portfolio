@@ -182,6 +182,7 @@ header nav ul {
   display: flex;
   padding-left: 0;
   list-style: none;
+  justify-content: space-between;
 }
 
 header nav ul li a{
