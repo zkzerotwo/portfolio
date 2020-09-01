@@ -217,3 +217,12 @@ header nav ul li:last-child a {
     color: #bdbdbd;
   }
 }
+
+/* Form styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
