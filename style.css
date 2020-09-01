@@ -98,6 +98,7 @@ div.profile-pic > img {
 
 .stack-item {
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -107,6 +108,9 @@ div.profile-pic > img {
   min-width: 400px;
   max-width: 600px;
   padding: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
 }
 
 .card {
@@ -224,5 +228,5 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  
+
 }
