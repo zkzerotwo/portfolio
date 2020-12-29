@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="style2.css" rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Langar&family=Nunito:wght@300&family=Redressed&display=swap"
+    rel="stylesheet">
   <title>Portfolio One</title>
 </head>
 <body>
 <!--Big beautiful background picture -->
 <!-- Navigation -->
   <div class="background">
-    <section class="group">
-      <header class="stack item">
-    		<h1 class="item">Welcome to my corner of the internet</h1>
+    <section class="">
+      <header class=" ">
     		<nav>
-    			<ul id="menu" class="item">
+    			<ul id="menu" class="back-bar-flex">
     				<li><a href="index.html">Home</a></li>
     				<li><a href="#" target="_blank">About</a></li>
     				<li><a href="#projects">Portfolio</a></li>
@@ -29,51 +31,51 @@
       <section>
         <h3>Welcome to my corner of the internet!</h3>
         <div style="text-align:center;" class="profile-pic">
-          <img src="./images/FB_IMG_1581791777419.jpg" alt="That's me!">
+          <img src="./images/FB_IMG_1581791777419.jpg" alt="That's me!" class="profile">
         </div>
       </section>
-      <section class="stack">
+      <section class="">
         <h2>Christopher 'ZK' Hal</h2>
-        <div class="stack item">
-          <h2 class="stack-item">Full-stack Web Engineer</h2>
+        <div class="">
+          <h2 class="">Full-stack Web Engineer</h2>
           <br>
-          <h3 class="stack-item">Chicago, IL</h3>
+          <h3 class="">Chicago, IL</h3>
           <br>
         </div>
       </section>
-      <p class="stack-item intro-card">Hi there, I'm Chris.</p>
+      <p class=" intro-">Hi there, I'm Chris.</p>
 <!--Introduction snippets -->
       <section>
         <h2>Intro</h2>
-        <div class="group">
-          <div class="group item card">
+        <div class="">
+          <div class="  ">
               <p>I also go by the name ZK, whichever is more comfortable for you. You might know me from the internet somewhere, but if you don't, nice to meet you. </p>
           </div>
-          <div class=" group item card">
-            <p>I'm a lifelong forum webmaster who upgraded his skillset to full-stack engineer</p>
+          <div class="   ">
+            <p>I'm a forum webmaster who upgraded his skillset to full- engineer</p>
           </div>
-          <div class="group item card">
+          <div class="  ">
           <p>I'm also a bartender and beverage professional that loves long walks on the beach, a good glass of wine, and exercising on a springboard floor. </p></div>
         </div>
       </section>
-      <section id="projects">
-        <h2>Me and My Projects</h2>
-        <div class="group">
-          <div class="group item card"><p>My skillset includes work with HTML, CSS, PHP, JS, and Liquid.</p></div>
-          <div class=" group item card"><p>Check out <a href="projects.html">this bot I built</a> using JS for Discord! It runs a role playing game through the server.</p></div>
-          <div class="group item card"><p>What about this forum that looks pretty cool, if I do say so myself. Poke around and read a bit.</p></div>
-        </div>
+      <section id="projects" class="">
+        <h2>Projects</h2>
+        <ul class="back-bar-flex">
+          <li class="silver-card"><p>My skillset includes work with HTML, CSS, PHP, JS, and Liquid.</p></li>
+          <li class="silver-card"><p>Check out <a href="projects.html">this bot I built</a> using JS for Discord! It runs a role playing game through the server.</p></li>
+          <li class="silver-card"><p>What about this forum that looks pretty cool, if I do say so myself. Poke around and read a bit.</p></li>
+        </ul>
       </section>
       <article>
         <h2>Contact Me</h2>
-        <div class="group">
-          <div class="group item card"><a href="https://github.com/zkzerotwo">Find me on GitHub</a></div>
-          <div class="group item card"><a href="contact-me.html">Email ya boy!</a></div>
-          <div class="group item card"><a href="https://www.vescrutia.net">Come roleplay with us!</a></div>
-          <div class="group item card">My LinkedIn, if I had one. <a href="linkedin.com/me"></a></div>
-        </div>
+        <ul class="grid">
+          <li class=""><a href="https://github.com/zkzerotwo">Find me on GitHub</a></li>
+          <li class="  "><a href="contact-me.html">Email ya boy!</a></li>
+          <li class="  "><a href="https://www.vescrutia.net">Come roleplay with us!</a></li>
+          <li class="  ">My LinkedIn, if I had one. <a href="linkedin.com/me"></a></li>
+        <ulv>
       </article>
-      <form name="signup" action="/signup">
+      <form name="signup" action="/signup" class="hidden">
     <div>
       <label for="username">Username</label>
       <input id="username" type="text" name="username" required>
