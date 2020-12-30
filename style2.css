@@ -53,9 +53,31 @@ body {
     margin: auto;
     text-align: center;
     font-size: 16px;
-    font-family: 'Langar', cursive;
+    /* font-family: 'Langar', cursive; */
     font-family: 'Nunito', sans-serif;
-    font-family: 'Redressed', cursive;
+    /* font-family: 'Redressed', cursive; */
+}
+
+a {
+    color: teal;
+}
+
+a:visited {
+    color: rgb(83, 14, 104);
+}
+
+section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+p {
+    font-size: 24px;
 }
 
 li {
@@ -70,10 +92,7 @@ li {
     align-content: space-around;
 }
 
-.profile {
-    width: 50%;
-    border-radius: 50%;
-}
+
 
 .hidden {
     display: none;
@@ -83,15 +102,24 @@ li {
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
+section.gold-card h2 {
+    font-size: 35px;
+}
 
+.profile {
+    width: 50%;
+    border-radius: 50%;
+    border: 1px groove silver;
+    border-style: outset;
+    border-width: 2px;
+}
 /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
-main {
-    text-align: center;
-}
+
+
 
 .back-bar {
     background-image: url("images/transparency-white.png");
@@ -99,6 +127,8 @@ main {
     border: 1px groove silver;
     border-style: outset;
     border-width: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .search {
@@ -110,10 +140,6 @@ main {
     border: 1px groove silver;
     border-style: outset;
     border-width: 2px;
-}
-
-.favorites h5 {
-    color: white;
 }
 
 .back-bar-flex {
@@ -146,7 +172,7 @@ main {
 .gold-card {
     background-image: url("images/transparency-white.png");
     border-radius: 0.5rem;
-    width: 99%;
+    width: 32%;
     display: inline-block;
     padding: 10px;
     border: 1px groove gold;

@@ -1,32 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style2.css" rel="stylesheet" type="text/css"/>
+  <link href="style2.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Langar&family=Nunito:wght@300&family=Redressed&display=swap"
     rel="stylesheet">
   <title>Portfolio One</title>
 </head>
+
 <body>
-<!--Big beautiful background picture -->
-<!-- Navigation -->
+  <!--Big beautiful background picture -->
+  <!-- Navigation -->
   <div class="background">
     <section class="">
       <header class=" ">
-    		<nav>
-    			<ul id="menu" class="back-bar-flex">
-    				<li><a href="index.html">Home</a></li>
-    				<li><a href="#" target="_blank">About</a></li>
-    				<li><a href="#projects">Portfolio</a></li>
-    				<li><a href="contact-me.html">Contact</a></li>
-    			</ul>
-    		</nav>
-    	</header>
+        <nav>
+          <ul id="menu" class="back-bar-flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" target="_blank">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     </section>
-<!--Main body -->
+    <!--Main body -->
     <main>
       <section>
         <h3>Welcome to my corner of the internet!</h3>
@@ -34,61 +35,79 @@
           <img src="./images/FB_IMG_1581791777419.jpg" alt="That's me!" class="profile">
         </div>
       </section>
-      <section class="">
+      <section class="gold-card">
         <h2>Christopher 'ZK' Hal</h2>
+        <br/>
         <div class="">
           <h2 class="">Full-stack Web Engineer</h2>
-          <br>
-          <h3 class="">Chicago, IL</h3>
-          <br>
+          <br/>
+          <h2 class="">Chicago, IL</h2>
         </div>
       </section>
-      <p class=" intro-">Hi there, I'm Chris.</p>
-<!--Introduction snippets -->
-      <section>
+      <!--Introduction snippets -->
+      <section class=" introduction back-bar">
         <h2>Intro</h2>
         <div class="">
           <div class="  ">
-              <p>I also go by the name ZK, whichever is more comfortable for you. You might know me from the internet somewhere, but if you don't, nice to meet you. </p>
+            <p>I also go by the name ZK. Nice to meet you, check out some of my work below and let's collaborate sometime. </p>
           </div>
           <div class="   ">
-            <p>I'm a forum webmaster who upgraded his skillset to full- engineer</p>
+            <p>I'm a forum webmaster who upgraded his skillset to full-stack engineer</p>
           </div>
           <div class="  ">
-          <p>I'm also a bartender and beverage professional that loves long walks on the beach, a good glass of wine, and exercising on a springboard floor. </p></div>
+            <p>I'm also a bartender and beverage professional that loves long walks on the beach, a good glass of wine,
+              and exercising on a springboard floor. </p>
+          </div>
         </div>
       </section>
       <section id="projects" class="">
         <h2>Projects</h2>
+        <p>My skillset includes work with HTML, CSS, PHP, JS, and Liquid.</p>
         <ul class="back-bar-flex">
-          <li class="silver-card"><p>My skillset includes work with HTML, CSS, PHP, JS, and Liquid.</p></li>
-          <li class="silver-card"><p>Check out <a href="projects.html">this bot I built</a> using JS for Discord! It runs a role playing game through the server.</p></li>
-          <li class="silver-card"><p>What about this forum that looks pretty cool, if I do say so myself. Poke around and read a bit.</p></li>
+          <li class="silver-card">
+            <p>Feeling thirsty? <a href="https://zkzerotwo.github.io/cocktail-search-api-capstone/">Here's an app</a> I created search for cocktails using TheCocktailDB's API.</p>
+            <p>HTML | CSS | JS | jQuery</p>
+          </li>
+          <li class="silver-card hidden">
+            <p>Check out <a href="projects.html">this bot I built</a> using JS for Discord! It runs a role playing game
+              through the server.</p>
+              <p>Node.js</p>
+          </li>
+          <li class="silver-card">
+            <p>Make a character on this forum, join the community and see what adventures unfold on <a href="https://www.vescrutia.net" target="_blank">Vescrutia</a></p>
+            <p>HTML | CSS | PHP
+            </p>
+          </li>
+          <li class="silver-card">
+            <p>Feeling like shopping? I created this website for <a href="https://undergroundcostumes.com" target="_blank">Underground Costumes</a>. Go commission a cosplay of your favorite characters!</p>
+            <p>HTML | CSS | Liquid</p>
+          </li>
         </ul>
       </section>
       <article>
         <h2>Contact Me</h2>
-        <ul class="grid">
+        <ul class="column">
           <li class=""><a href="https://github.com/zkzerotwo">Find me on GitHub</a></li>
-          <li class="  "><a href="contact-me.html">Email ya boy!</a></li>
-          <li class="  "><a href="https://www.vescrutia.net">Come roleplay with us!</a></li>
-          <li class="  ">My LinkedIn, if I had one. <a href="linkedin.com/me"></a></li>
-        <ulv>
+          <li class="  "><a href="contact-me.html">Email me here!</a></li>
+          <li class="  "><a href="https://www.vescrutia.net">Roleplay with me here!</a></li>
+          <li class="  "><a href="www.linkedin.com/in/halc713">Let's connect on LinkedIn</a></li>
+          <ulv>
       </article>
       <form name="signup" action="/signup" class="hidden">
-    <div>
-      <label for="username">Username</label>
-      <input id="username" type="text" name="username" required>
-    </div>
-    <div>
-      <label for="password">Password</label>
-      <input id="password" type="password" name="password">
-    </div>
-    <input type="submit">
-    </form>
+        <div>
+          <label for="username">Username</label>
+          <input id="username" type="text" name="username" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password">
+        </div>
+        <input type="submit">
+      </form>
     </main>
     <footer></footer>
   </div>
   <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
