@@ -92,7 +92,7 @@ li {
     align-content: space-around;
 }
 
-.hidden {
+#hidden {
     display: none;
 }
 
@@ -101,7 +101,7 @@ li {
 }
 
 .profile {
-    width: 50%;
+    width: 99%;
     border-radius: 50%;
     border: 1px groove silver;
     border-style: outset;
@@ -137,10 +137,18 @@ li {
     justify-content: space-around;
 }
 
+.back-bar-stack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .silver-card {
     background-image: url("images/transparency-white.png");
     border-radius: 0.5rem;
-    width: 32%;
+    width: 85%;
     padding: 10px;
     margin: 2px;
     border: 1px groove silver;
@@ -159,7 +167,7 @@ li {
 .gold-card {
     background-image: url("images/transparency-white.png");
     border-radius: 0.5rem;
-    width: 32%;
+    width: 85%;
     display: inline-block;
     padding: 10px;
     border: 1px groove gold;
@@ -177,6 +185,14 @@ Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
 
+header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    min-height: 30px;
+}
+
 /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
@@ -192,8 +208,21 @@ section.gold-card h2 {
     font-size: 35px;
 }
 
+section#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 section#projects div.fade {
     color: white;
+    width: 100%;
+}
+
+ul.back-bar-stack li {
+    flex: 1;
 }
 
 section#projects div {
@@ -217,56 +246,65 @@ a.credit {
 }
 
 /* -------------------------------------
-place all the desktop styles above this line
+place all the desktop styles below this line
 Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 place all the mobile tables styles below this line
 */
 
-/*iPhone portrait*/
-
-@media only screen and (min-width: 320px) {
-    /* body {
-        border: 3px solid purple;
-    } */
-}
-
 /*iPhone landscape*/
 
 @media only screen and (min-width: 480px) {
-    /* body {
+    body {
         border: 3px solid green;
-    } */
+    }
 }
 
 /*Android landscape*/
 
 @media only screen and (min-width: 640px) {
-    /* body {
+    body {
         border: 3px solid pink;
-    } */
+    }
+    .back-bar-stack {
+        flex-direction: row;
+    }
+    .silver-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 32%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: auto;
+        padding-bottom: auto;
+    }
+    section#projects ul.back-bar-stack {
+        flex: 1;
+    }
 }
 
 /*iPad potrait*/
 
 @media only screen and (min-width: 768px) {
-    /* body {
+    body {
         border: 3px solid red;
-    } */
+    }
 }
 
 /*iPad lanscape / small laptop*/
 
 @media only screen and (min-width: 1024px) {
-    /* body {
+    body {
         border: 3px solid blue;
-    } */
+    }
 }
 
 /*large desktop*/
 
 @media only screen and (min-width: 1600px) {
-    /* body {
+    body {
         border: 3px solid yellow;
-    } */
+    }
 }
