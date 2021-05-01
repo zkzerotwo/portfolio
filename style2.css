@@ -272,9 +272,9 @@ place all the mobile tables styles below this line
 /*iPhone landscape*/
 
 @media only screen and (min-width: 480px) {
-    body {
+    /* body {
         border: 3px solid green;
-    }
+    } */
     .silver-card {
         width: 95%;
     }
@@ -283,18 +283,15 @@ place all the mobile tables styles below this line
 /*Android landscape*/
 
 @media only screen and (min-width: 640px) {
-    body {
+    /* body {
         border: 3px solid pink;
-    }
-    .back-bar-stack {
-        /* flex-direction: row; */
-    }
+    } */
     .profile-pic {
         width: 50%;
         margin: auto;
     }
     .silver-card {
-        width: 100;
+        width: 85%;
     }
     section#projects ul.back-bar-stack {
         flex: 1;
@@ -304,26 +301,29 @@ place all the mobile tables styles below this line
 /*iPad potrait*/
 
 @media only screen and (min-width: 768px) {
-    body {
+    /* body {
         border: 3px solid red;
-    }
+    } */
     .silver-card {
-        width: 85%;
+        width: 70%;
     }
 }
 
 /*iPad lanscape / small laptop*/
 
 @media only screen and (min-width: 1024px) {
-    body {
+    /* body {
         border: 3px solid blue;
-    }
+    } */
 }
 
 /*large desktop*/
 
 @media only screen and (min-width: 1600px) {
-    body {
+    /* body {
         border: 3px solid yellow;
+    } */
+    .silver-card {
+        width: 60%;
     }
 }
