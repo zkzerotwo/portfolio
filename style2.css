@@ -63,9 +63,8 @@ a {
 }
 
 a:visited {
-    color: rgb(255, 227, 158)
+    color: gold
 }
-
 section {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -166,6 +165,14 @@ textarea {
     border: 1px groove silver;
     border-style: outset;
     border-width: 2px;
+}
+
+.silver-card a {
+    color: teal;
+}
+
+.silver-card a {
+    color: purple;
 }
 
 .grid {
