@@ -59,11 +59,11 @@ body {
 }
 
 a {
-    color: teal;
+    color: white;
 }
 
 a:visited {
-    color: rgb(83, 14, 104);
+    color: rgb(255, 227, 158)
 }
 
 section {
@@ -82,6 +82,15 @@ p {
 
 li {
     list-style: none;
+}
+
+input {
+    width: 85%
+}
+
+textarea {
+    width: 85%;
+    height: 4vw
 }
 
 .column {
@@ -118,6 +127,7 @@ li {
     border-width: 2px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .search {
@@ -228,9 +238,11 @@ section.gold-card h2 {
 section#projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
+    margin: auto;
+    padding: 10px;
 }
 
 section#projects div.fade {
@@ -295,6 +307,11 @@ place all the mobile tables styles below this line
     }
     section#projects ul.back-bar-stack {
         flex: 1;
+    }
+    .back-bar {
+        width: 75%;
+        padding: 5px;
+        /* margin: auto; */
     }
 }
 

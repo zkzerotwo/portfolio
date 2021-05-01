@@ -1,44 +1,92 @@
-
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="style.css" rel="stylesheet" type="text/css"/>
-      <title>Portfolio</title>
-    </head>
-    <body>
-      <section>
-        <header class="stack">
-      		<h1 class="stack-item">Welcome to my corner of the internet</h1>
-      		<nav>
-      			<ul id="menu" class="stack-item">
-      				<li><a href="index.html">Home</a></li>
-      				<li><a href="#" target="_blank">About</a></li>
-      				<li><a href="projects.html">Portfolio</a></li>
-      				<li><a href="contact-me.html">Contact</a></li>
-      			</ul>
-      		</nav>
-      	</header>
-      </section>
-      <main class="stack">
-        <section class="stack-item">
-          <h2>Let's get in touch. Enter your information below and I'll get back to you ASAP!</h2>
-        </section>
-        <section class="stack-item">
-          <form action="https://formspree.io/xqkyvgnl" method="POST" class="stack">
-          <label class="stack-item">Name:</label>
-          <input type="text" name="name" placeholder="What's your name?">
-          <label class="stack-item">Your email:</label>
-          <input type="text" name="_replyto" placeholder="Don't forget this one!">
-          <label class="stack-item">Your message:</label>
-          <textarea name="message" placeholder="Describe your project or ask me a question"></textarea>
-          <button class="stack-item" type="submit">Send</button>
-          </form>
-        </section>
-      </main>
-      <footer></footer>
+<html lang="en">
 
-    <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Langar&family=Nunito:wght@300&family=Redressed&display=swap"
+    rel="stylesheet">
+  <title>Portfolio One</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <section class="">
+    <header class="">
+      <nav>
+        <ul id="menu" class="back-bar-flex">
+          <li class="fade"><a href="index.html">Home</a></li>
+          <li class="fade"><a href="index.html#about" target="">About</a></li>
+          <li class="fade"><a href="index.html#projects">Portfolio</a></li>
+          <li class="fade"><a href="contact-me.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  <!--Main body -->
+  <main>
+    <section class="welcome fade">
+      <h3 class="">Welcome to my corner of the internet!</h3>
+      <div style="text-align:center;" class="profile-pic">
+        <img src="./images/20210428_124541.jpg" alt="That's me!" class="profile">
+      </div>
+    </section>
+    <section class="gold-card">
+      <h2>Christopher 'ZK' Hal</h2>
+      <br />
+      <div class="">
+        <h2 class="">Full-stack Web Engineer</h2>
+        <br />
+        <h2 class="">Chicago, IL</h2>
+      </div>
+    </section>
+    <!--Introduction snippets -->
+    <section class=" introduction back-bar">
+      <h2>About Me</h2>
+      <div class="">
+        <div class="  ">
+          <p>Reach out to me for any project you like. Ask me anything, I don't bite.
+          </p>
+      </div>
+    </section>
+    <section class="silver-card" id="projects" class="">
+
+      <form action="https://formspree.io/xqkyvgnl" method="POST" class="stack">
+        <label class="stack-item"><p>Name:</p></label>
+        <input type="text" name="name" placeholder="What's your name?">
+        <label class="stack-item"><p>Your email:</p></label>
+        <input type="text" name="_replyto" placeholder="Don't forget this one!">
+        <label class="stack-item"><p>Your message:</p></label>
+        <textarea name="message" placeholder="Describe your project or ask me a question"></textarea>
+        <br />
+        <button class="stack-item" type="submit">Send</button>
+      </form>
+    </section>
+    <section class="anti-fade">
+        <h2>Contact Me</h2>
+        <ul class="column">
+          <li class=""><a href="https://github.com/zkzerotwo">Find me on GitHub</a></li>
+          <li class="  ">halc713@gmail.com</li>
+          <li class="  "><a href="https://www.vescrutia.net">Roleplay with me here!</a></li>
+          <li class="  "><a href="https://www.linkedin.com/in/halc713/">Let's connect on LinkedIn</a></li>
+        </ul>
+    </section>
+    <form name="signup" action="/signup" id="hidden" class="hidden">
+      <div>
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+      </div>
+      <input type="submit">
+    </form>
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
