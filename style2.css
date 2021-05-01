@@ -261,10 +261,14 @@ section#projects div {
 
 /*Footer styles (Main Module) (all the styles inside the < footer>tag) */
 
-footer a {
-    color: white;
+.anti-fade a {
+    color: teal;
     text-decoration: none;
-    background-image: url("images/transparent.jpg");
+    /* background-image: url("images/transparent.jpg"); */
+}
+
+.anti-fade a:visited {
+    color: purple;
 }
 
 a.credit {
