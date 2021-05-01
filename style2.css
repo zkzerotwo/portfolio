@@ -109,8 +109,10 @@ li {
 }
 
 .back-bar {
-    background-image: url("images/transparency-white.png");
-    width: 100%;
+    margin: auto;
+    background-image: url(images/transparency-white.png);
+    width: 95%;
+    padding: 5px;
     border: 1px groove silver;
     border-style: outset;
     border-width: 2px;
@@ -178,6 +180,21 @@ li {
 
 .anti-fade {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.screens {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.screen-slide {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: auto;
+  list-style: none;
 }
 
 /* -------------------------------------
@@ -258,6 +275,9 @@ place all the mobile tables styles below this line
     body {
         border: 3px solid green;
     }
+    .silver-card {
+        width: 95%;
+    }
 }
 
 /*Android landscape*/
@@ -267,18 +287,14 @@ place all the mobile tables styles below this line
         border: 3px solid pink;
     }
     .back-bar-stack {
-        flex-direction: row;
+        /* flex-direction: row; */
+    }
+    .profile-pic {
+        width: 50%;
+        margin: auto;
     }
     .silver-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 32%;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-top: auto;
-        padding-bottom: auto;
+        width: 100;
     }
     section#projects ul.back-bar-stack {
         flex: 1;
@@ -290,6 +306,9 @@ place all the mobile tables styles below this line
 @media only screen and (min-width: 768px) {
     body {
         border: 3px solid red;
+    }
+    .silver-card {
+        width: 85%;
     }
 }
 

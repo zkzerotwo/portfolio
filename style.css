@@ -11,7 +11,7 @@ p {
   margin: auto;
   text-align: center;
   padding: 0px;
-  text-size: 32px;
+  font-size: 32px;
   color: white;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -70,7 +70,8 @@ div a:link {
   display: block;
   text-align: center;
   border-radius: 50%;
-  width: 50%
+  width: 50%;
+  padding: 5px;
 }
 
 div.profile-pic img {
@@ -129,7 +130,7 @@ div.profile-pic img {
   border-radius: 50%;
   background-image: url("./images/abstract-art-blur-blurred-301664.jpg");
   background-color: gray;
-  background: -size: cover;
+  background-size: cover;
   background-position: center;
   max-height: 100px;
   width: 100%;
@@ -141,7 +142,7 @@ p.intro-card {
 
 /* Responsive flex */
 
-@media all and (min-width: 800px) {
+/* @media all and (min-width: 800px) {
   .group {
     display: flex;
     flex-direction: row;
@@ -156,7 +157,7 @@ p.intro-card {
   div.profile-pic>img {
     width: 50%;
   }
-}
+} */
 
 /* Header Nav Bar */
 
@@ -200,7 +201,7 @@ header nav ul li:last-child a {
 
 /* Responsive header */
 
-@media all and (min-width: 600px) {
+/* @media all and (min-width: 600px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -216,7 +217,7 @@ header nav ul li:last-child a {
   header nav ul li a:hover {
     color: #bdbdbd;
   }
-}
+} */
 
 /* Form styling */
 
@@ -224,6 +225,84 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+/* REsponsive styling*/
+
+/*iPhone portrait*/
+
+@media only screen and (min-width: 320px) {
+  /* body {
+    border: 3px solid purple;
+  } */
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    border: 3px solid green;
+  }
+  li.loot_drop {
+    width: 49%;
+  }
+  .intro-card {
+    width: 74%;
+  }
+  input {
+    width: 75%;
+  }
+}
+
+/*Android landscape*/
+
+@media only screen and (min-width: 640px) {
+  body {
+    border: 3px solid pink;
+  }
+  li.loot_drop {
+    width: 32%;
+  }
+  .intro-card {
+    width: 32%;
+  }
+  input {
+    width: 50%;
+  }
+  .search-results h3 {
+    width: 50%;
+  }
+}
+
+/*iPad potrait*/
+
+@media only screen and (min-width: 768px) {
+  body {
+    border: 3px solid red;
+  }
+  .intro-card {
+    width: 32%;
+  }
+}
+
+/*iPad lanscape / small laptop*/
+
+@media only screen and (min-width: 1024px) {
+  /* body {
+    border: 3px solid blue/;
+  } */
+  li.loot_drop {
+    width: 24%;
+  }
+}
+
+/*large desktop*/
+
+@media only screen and (min-width: 1600px) {
+  /* body {
+    border: 3px solid yellow;
+  } */
+  li.loot_drop {
+    width: 19%;
+  }
 }
 
 /* MAke links more readable, underline.*/
