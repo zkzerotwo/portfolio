@@ -100,7 +100,7 @@ textarea {
     align-content: space-around;
 }
 
-#hidden {
+.hidden {
     display: none;
 }
 
@@ -161,7 +161,7 @@ textarea {
     border-radius: 0.5rem;
     width: 85%;
     padding: 10px;
-    margin: 2px;
+    margin: auto;
     border: 1px groove silver;
     border-style: outset;
     border-width: 2px;
@@ -283,6 +283,10 @@ a.credit {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.container {
+    margin: auto;
 }
 
 /* -------------------------------------
